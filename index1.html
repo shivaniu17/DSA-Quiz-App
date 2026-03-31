@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA  Quiz</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>DSA Quiz App</h1>
+
+    <div id="language-screen">
+      <h2>Select Language</h2>
+      <button class="lang-btn" data-lang="cpp">C++</button>
+      <button class="lang-btn" data-lang="java">Java</button>
+      <button class="lang-btn" data-lang="python">Python</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div class="quiz-header">
+        <h2 id="question"></h2>
+        <div id="timer">Time: <span id="time">15</span>s</div>
+      </div>
+      <div class="progress-bar" id="progress-text">Question 0 of 0</div>
+      <div id="answers"></div>
+      <div id="feedback" class="hidden"></div>
+      <div class="btn-group">
+        <button id="prev-btn" class="hidden">Previous</button>
+        <button id="next-btn" disabled>Next</button>
+      </div>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
